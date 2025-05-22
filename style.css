@@ -18,37 +18,37 @@ a {
   color: inherit;
 }
 
-/* Navbar */
-.navbar {
+/* Vertical Navbar */
+.vertical-nav {
   background-color: #ffffff;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 2rem 1rem;
+  text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.nav-logo {
-  font-size: 1.5rem;
+.vertical-nav .nav-logo {
+  font-size: 2rem;
   font-weight: bold;
   color: #2d2dff;
+  margin-bottom: 2rem;
 }
 
-.nav-links {
+.vertical-nav .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 0;
 }
 
-.nav-links a {
+.vertical-nav .nav-links a {
   color: #333;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.2s ease-in-out;
 }
 
-.nav-links a:hover {
+.vertical-nav .nav-links a:hover {
   color: #2d2dff;
 }
 
@@ -57,7 +57,7 @@ a {
   background: linear-gradient(135deg, #2d2dff, #6e6eff);
   color: white;
   text-align: center;
-  padding: 6rem 1rem;
+  padding: 5rem 1rem;
 }
 
 .hero h1 {
@@ -84,7 +84,7 @@ a {
   background-color: #00bfa5;
 }
 
-/* Sections */
+/* Section Layouts */
 .section {
   padding: 4rem 1.5rem;
   max-width: 1000px;
@@ -113,7 +113,6 @@ a {
   padding-left: 1.5rem;
 }
 
-/* Footer */
 footer {
   background-color: #222;
   color: white;
